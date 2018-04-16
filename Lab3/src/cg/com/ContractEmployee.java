@@ -1,6 +1,6 @@
 package cg.com;
 
-public class ContractEmployee {
+public class ContractEmployee extends Employee {
 	private int noOfHours;
 	private static int count;
 	private Contractor contractor;

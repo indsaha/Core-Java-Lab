@@ -5,20 +5,38 @@ public class Employee {
 	private Date joiningDate;
 	private double salary;
 	private static int count;
-	
-	public Employee (String name, Date joiningDate, double salary)
-	{
-		this.name=name;
-		this.joiningDate=joiningDate;
-		this.salary=salary;
-		
+	private String designation;
+	public String getDesignation() {
+		return designation;
 	}
-
-	public double getSalary(double salary) {
-		
-		this.salary = salary;
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Date getJoiningDate() {
+		return joiningDate;
+	}
+	public void setJoiningDate(Date joiningDate) {
+		this.joiningDate = joiningDate;
+	}
+	public double getSalary() {
 		return salary;
 	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	public static int getCount() {
+		return count;
+	}
+	public static void setCount(int count) {
+		Employee.count = count;
+	}
+	
 	
 	
 	

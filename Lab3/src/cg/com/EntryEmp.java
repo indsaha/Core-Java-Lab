@@ -1,7 +1,10 @@
 package cg.com;
 
 	import java.util.Scanner;
-	import java.util.ArrayList;
+
+import employeeDetails.Employee;
+
+import java.util.ArrayList;
 	import java.util.List;
 
 	public class EntryEmp
@@ -33,6 +36,8 @@ package cg.com;
 			 {
 				  if (employeeType == 'P')
 				  {
+					  int count = 0;
+						Employee employees[]=new Employee[5];
 	          
 				      int count=++pempid;
 					  System.out.print("Enter Name: ");
@@ -52,8 +57,12 @@ package cg.com;
 				      System.out.print("Enter Your Choice ");
 				      choice=SC.next();
 				      
+				      
 				      Date doj=new Date(joiningday,joiningmonth,joiningyear);
-				      Emp e = new Emp(count,name,grade,doj,salary);
+				      Employee emp = new Employee();
+				      emp.setName(name);
+				      emp.setSalary(salary);
+				      emp.setDesignation(grade);
 				  }
 				  
 				  else
@@ -77,7 +86,7 @@ package cg.com;
 				      choice=SC.next();
 				      
 				      Date doj=new Date(joiningday,joiningmonth,joiningyear);
-				      Emp e = new ContractEmployee(count,name,grade,doj,salary);
+				      
 				  }
 			      
 			      /*dateList.add(new Date(joiningday,joiningmonth,joiningyear));
