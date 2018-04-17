@@ -7,11 +7,28 @@ public class ContractEmployee extends Employee {
 	public double salary;
 	
 	
-	public double getSalary(int noOfHours, double wage)
+	
+	public String getName()
 	{
-		this.noOfHours=noOfHours;
-		salary=wage * noOfHours;
-		return wage;
+		return super.getName();
 	}
+	
+	public Date getJoiningDate() {
+		return super.getJoiningDate();
+	}
+	
+	public String getDesignation() {
+		return super.getDesignation();
+	}
+
+	public Contractor getContractor() {
+		return contractor;
+	}
+
+	public void setContractor(Contractor contractor) {
+		this.contractor = contractor;
+	}
+	
+	
 
 }

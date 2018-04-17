@@ -1,16 +1,13 @@
 package cg.com;
 
-	import java.util.Scanner;
+import java.util.Scanner;
 
-import employeeDetails.Employee;
-
-import java.util.ArrayList;
-	import java.util.List;
 
 	public class EntryEmp
 	{
 		  public static int pempid;
 		  public static int tempid;
+		  public static char employeeType;
 	      public static void main(String args[])
 	      {
 			  /*List<Emp> employeeList= new ArrayList<Emp>();*/
@@ -37,9 +34,9 @@ import java.util.ArrayList;
 				  if (employeeType == 'P')
 				  {
 					  int count = 0;
-						Employee employees[]=new Employee[5];
+					  PermanentEmployee employees[]=new PermanentEmployee[5];
 	          
-				      int count=++pempid;
+				      int count1=++pempid;
 					  System.out.print("Enter Name: ");
 					  name=SC.next();
 					  System.out.print("Enter Grade: ");
@@ -59,14 +56,17 @@ import java.util.ArrayList;
 				      
 				      
 				      Date doj=new Date(joiningday,joiningmonth,joiningyear);
-				      Employee emp = new Employee();
+				      PermanentEmployee emp = new PermanentEmployee();
 				      emp.setName(name);
 				      emp.setSalary(salary);
 				      emp.setDesignation(grade);
+				      emp.setJoiningDate(doj);
+				      
 				  }
 				  
 				  else
 				  {
+					  ContractEmployee employees[]=new ContractEmployee[5];
 					  int count=++tempid;
 					  System.out.print("Enter Name: ");
 					  name=SC.next();
@@ -86,6 +86,11 @@ import java.util.ArrayList;
 				      choice=SC.next();
 				      
 				      Date doj=new Date(joiningday,joiningmonth,joiningyear);
+				      ContractEmployee conemp = new ContractEmployee();
+				      conemp.setName(name);
+				      conemp.setSalary(salary);
+				      conemp.setDesignation(grade);
+				      conemp.setJoiningDate(doj);
 				      
 				  }
 			      
@@ -98,7 +103,7 @@ import java.util.ArrayList;
 						System.out.println("Employee Number:" + s.count + "\tName: " + s.name + "\tEmployee Grade:" + s.grade + "\tJoining Date: " + s.joining + "\tSalary: " + s.salary );
 					 }*/
 				  
-			      e.display();
+			      //e.display();
 			      
 				 if(choice.charAt(0) == 'N')
 				 {
@@ -110,4 +115,4 @@ import java.util.ArrayList;
 		  }
 	}
 
-}
+

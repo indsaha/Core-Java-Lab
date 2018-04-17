@@ -8,10 +8,10 @@ public class PermanentEmployee extends Employee {
 		return count;
 	}
 	public static void setCount(int count) {
-		PermanentEmployee.count = count;
+		PermanentEmployee.count = ++count;
 	}
 	public double getSalary() {
-		return salary;
+		return super.getSalary();
 	}
 	public void setSalary(double salary) {
 		this.salary = salary;
