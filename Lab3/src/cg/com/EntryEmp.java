@@ -7,7 +7,9 @@ import java.util.Scanner;
 	{
 		  public static int pempid;
 		  public static int tempid;
-		  public static char employeeType;
+		  public static String employeeType;
+		  public static Contractor con;
+		  public static PermanentEmployee perm;
 	      public static void main(String args[])
 	      {
 			  /*List<Emp> employeeList= new ArrayList<Emp>();*/
@@ -23,6 +25,7 @@ import java.util.Scanner;
 			  int joiningmonth;
 			  int joiningyear;
 			  int salary;
+			  int hours;
 			  String choice=null;
 			  
 			  System.out.print("Enter Your Choice: ");
@@ -31,10 +34,12 @@ import java.util.Scanner;
 			  
 			  while(choice.charAt(0) == 'Y')  
 			 {
-				  if (employeeType == 'P')
+				  System.out.print("Enter Your Choice for Permanent(P) or Other: ");
+				  employeeType=SC.next();
+				  
+				  if (employeeType.charAt(0) == 'P')
 				  {
 					  int count = 0;
-					  PermanentEmployee employees[]=new PermanentEmployee[5];
 	          
 				      int count1=++pempid;
 					  System.out.print("Enter Name: ");
@@ -49,10 +54,6 @@ import java.util.Scanner;
 					  joiningyear=SC.nextInt();
 					  System.out.print("Enter salary: ");
 					  salary=SC.nextInt();
-				  
-		         
-				      System.out.print("Enter Your Choice ");
-				      choice=SC.next();
 				      
 				      
 				      Date doj=new Date(joiningday,joiningmonth,joiningyear);
@@ -62,11 +63,15 @@ import java.util.Scanner;
 				      emp.setDesignation(grade);
 				      emp.setJoiningDate(doj);
 				      
+				      
+				      
+				      
+				      
 				  }
 				  
 				  else
 				  {
-					  ContractEmployee employees[]=new ContractEmployee[5];
+					  //ContractEmployee employees[]=new ContractEmployee[5];
 					  int count=++tempid;
 					  System.out.print("Enter Name: ");
 					  name=SC.next();
@@ -78,19 +83,24 @@ import java.util.Scanner;
 					  joiningmonth=SC.nextInt();
 					  System.out.print("Enter Joining Year: ");
 					  joiningyear=SC.nextInt();
-					  System.out.print("Enter salary: ");
-					  salary=SC.nextInt();
+					  System.out.print("Enter Hours: ");
+					  hours=SC.nextInt();
+					  /*System.out.print("Enter Rate: ");
+					  rate=SC.nextInt();*/
+					  
 				  
 		         
-				      System.out.print("Enter Your Choice ");
-				      choice=SC.next();
+				      /*System.out.print("Enter Your Choice: ");
+				      choice=SC.next();*/
 				      
 				      Date doj=new Date(joiningday,joiningmonth,joiningyear);
 				      ContractEmployee conemp = new ContractEmployee();
 				      conemp.setName(name);
-				      conemp.setSalary(salary);
 				      conemp.setDesignation(grade);
 				      conemp.setJoiningDate(doj);
+				      conemp.setNoOfHours(hours); ;
+				      
+				      
 				      
 				  }
 			      
@@ -104,6 +114,8 @@ import java.util.Scanner;
 					 }*/
 				  
 			      //e.display();
+				  System.out.print("Enter Your Choice:  ");
+			      choice=SC.next();
 			      
 				 if(choice.charAt(0) == 'N')
 				 {

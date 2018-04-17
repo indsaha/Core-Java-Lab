@@ -7,6 +7,9 @@ public class ContractEmployee extends Employee {
 	public double salary;
 	
 	
+	public ContractEmployee(){
+		contractor.addEmployee(this);
+	}
 	
 	public String getName()
 	{
@@ -28,6 +31,25 @@ public class ContractEmployee extends Employee {
 	public void setContractor(Contractor contractor) {
 		this.contractor = contractor;
 	}
+
+	public int getNoOfHours() {
+		return noOfHours;
+	}
+
+	public void setNoOfHours(int noOfHours) {
+		this.noOfHours = noOfHours;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = contractor.getRate() * noOfHours;
+	}
+	
+	
+	
 	
 	
 

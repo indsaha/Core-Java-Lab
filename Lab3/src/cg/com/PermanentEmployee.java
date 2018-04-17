@@ -7,21 +7,29 @@ public class PermanentEmployee extends Employee {
 	public static int getCount() {
 		return count;
 	}
-	public static void setCount(int count) {
-		PermanentEmployee.count = ++count;
+	
+	PermanentEmployee permemployees[]=new PermanentEmployee[5];
+	
+	public PermanentEmployee addEmployee(PermanentEmployee employee)
+	{
+		permemployees[++count]= employee;
+		return permemployees[count];
 	}
+	
 	public double getSalary() {
 		return super.getSalary();
 	}
-	public void setSalary(double salary) {
-		this.salary = salary;
+	
+	public void display()
+	{
+		for(Employee emp : permemployees )
+		{
+			System.out.println("Name: " + emp.getName());
+			System.out.println("Joinning Date: " + emp.getJoiningDate() );
+			System.out.println("Salary: " + emp.getSalary());
+		}
 	}
-	public Contractor getContrac() {
-		return contrac;
-	}
-	public void setContrac(Contractor contrac) {
-		this.contrac = contrac;
-	}
+	
 	
 	
 
