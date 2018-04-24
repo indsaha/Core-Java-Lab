@@ -5,6 +5,20 @@ public class Bank {
 	int flag=0;
 	int i=0;
 	
+	
+	public void addAccount()
+	{
+		for(int i=0;i<5;i++)
+		{
+		    accounts[i] = new Account(i+1);
+			accounts[i].setBalance(20000);
+		}
+		//for(i=0;i<5;i++)
+		//{
+		//	System.out.println("Account No: "+accounts[i].getAccountNo());
+		//	System.out.println("Account Balance: "+accounts[i].getAccountBalance());
+		//}
+	}
 	public void transferAmount(Account toAccount, Account fromAccount, double amount)
 	{
 		findAccount(toAccount.getId()).Deposit(amount);
@@ -22,7 +36,7 @@ public class Bank {
 				break;
 			}
 			else
-				break;
+				continue;
 			
 		}
 		if(flag== 1)
