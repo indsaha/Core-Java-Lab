@@ -1,0 +1,5 @@
+set CATALINA_HOME=D:\dev\tools\apache-tomcat-8.0.36
+
+set JAVA_HOME=d:\bcpabh\setups\jdk1.8.0_92
+
+set PATH=%JAVA_HOME%\bin;%CATATLINA_HOME%\bin;%PATH%
