@@ -62,7 +62,7 @@ import java.util.Scanner;
 				      emp.setSalary(salary);
 				      emp.setDesignation(grade);
 				      emp.setJoiningDate(doj);
-				      
+				      emp.display();
 				      
 				      
 				      

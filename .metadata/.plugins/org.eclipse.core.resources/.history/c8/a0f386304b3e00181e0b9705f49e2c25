@@ -1,0 +1,17 @@
+package cg.com;
+
+public class ContractEmployee {
+	private int noOfHours;
+	private static int count;
+	private Contractor contractor;
+	public double wage;
+	
+	
+	public double getSalary(int noOfHours, double salary)
+	{
+		this.noOfHours=noOfHours;
+		wage=salary * noOfHours;
+		return wage;
+	}
+
+}

@@ -22,7 +22,7 @@ public class PermanentEmployee extends Employee {
 	
 	public void display()
 	{
-		for(Employee emp : permemployees )
+		for(PermanentEmployee emp : permemployees )
 		{
 			System.out.println("Name: " + emp.getName());
 			System.out.println("Joinning Date: " + emp.getJoiningDate() );

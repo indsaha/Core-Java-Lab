@@ -16,6 +16,19 @@ public class Player {
 		this.game = game;
 	}
 	
+	public void noOfGames()
+	{
+		int count= game.length;
+		
+		if(count < 2)
+		{
+			System.out.println("Games Count: " + count);
+			System.out.println("Enlisted Player can't play Less than TWO (2) Games");
+		}
+		else
+			System.out.println("Games Count: " + count);
+	}
+	
 	public void display()
 	{
 		for(int i=0 ; i < game.length ; i++)

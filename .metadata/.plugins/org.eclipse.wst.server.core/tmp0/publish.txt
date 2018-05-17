@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Tue May 08 10:47:41 IST 2018
+org.eclipse.jst.jee.server\:FirstServelet=D\:\\apache-tomcat-8.0.36-windows-x64\\apache-tomcat-8.0.36\\wtpwebapps\\FirstServelet
+org.eclipse.jst.jee.server\:Lab_1.0=D\:\\apache-tomcat-8.0.36-windows-x64\\apache-tomcat-8.0.36\\wtpwebapps\\Lab_1.0
+org.eclipse.jst.jee.server\:Servlet-Demos=D\:\\apache-tomcat-8.0.36-windows-x64\\apache-tomcat-8.0.36\\wtpwebapps\\Servlet-Demos

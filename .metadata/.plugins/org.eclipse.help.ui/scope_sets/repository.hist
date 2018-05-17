@@ -1,0 +1,6 @@
+#Tue Apr 10 15:35:45 IST 2018
+__DEFAULT__=false
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.sdk.Google.master=true
+org.eclipse.help.ui.localSearch.master=true
+expression=repository

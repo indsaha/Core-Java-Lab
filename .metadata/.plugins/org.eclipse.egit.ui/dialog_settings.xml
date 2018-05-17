@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="GitCommitMessageComponent">
+		<list key="D:\Indranil\MyWorkspace\.git">
+			<item value="false"/>
+			<item value="indsaha &lt;indsaha@din51003328.corp.capgemini.com&gt;"/>
+			<item value="added new"/>
+			<item value="indsaha &lt;indsaha@din51003328.corp.capgemini.com&gt;"/>
+			<item value="bcfe1b47fe1d1646322c454794b388bacc4efa26"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="200,200" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="200,200" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>
